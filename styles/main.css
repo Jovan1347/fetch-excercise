@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Rubik+Glitch&display=swap");
+.find-meal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 5%;
+  font-size: 1.5em;
+  font-weight: bolder;
+  background: #1B1A17;
+  color: #F0E3CA;
+}
+.find-meal p {
+  margin-left: -60px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.search input {
+  width: 50%;
+  height: 60px;
+  text-align: center;
+  border-radius: 5px;
+  border: none;
+}
+.search .search-button {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.search .search-button img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.meals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  width: 90%;
+  padding: 50px 5%;
+}
+
+.meal-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background: #FF8303;
+}
+.meal-card-container .meal-card {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+}
+.meal-card-container .meal-card .meal-image {
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+  background: #1B1A17;
+}
+.meal-card-container .meal-card .meal-image img {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.meal-card-container .meal-card .read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 50px 0;
+  background: #1B1A17;
+  color: #F0E3CA;
+  cursor: pointer;
+}
+
+.food-info {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 5%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(27, 26, 23, 0.9);
+  color: #F0E3CA;
+  display: none;
+}
+
+.info-meal-name {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.food-info-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  padding: 50px 5%;
+  background-color: rgba(255, 131, 3, 0.8);
+  border-radius: 30px;
+  font-size: 1.5em;
+  font-weight: bolder;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.info-watch-on {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.info-watch-on p {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.info-watch-on img {
+  width: 50px;
+}
+
+.div1 {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  rotate: 135deg;
+  background-color: white;
+  width: 2px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.div2 {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  rotate: -135deg;
+  background-color: white;
+  width: 2px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  font-size: 3em;
+  font-weight: bolder;
+  color: #FF8303;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #F0E3CA;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: hidden;
+}/*# sourceMappingURL=main.css.map */

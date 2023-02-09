@@ -1,0 +1,25 @@
+@import "./searchFood";
+@import "./foodCards";
+@import "./colors";
+@import "./foodInfo";
+@import "./greeting";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&family=Rubik+Glitch&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: $body-background-color;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    overflow: hidden;
+}
