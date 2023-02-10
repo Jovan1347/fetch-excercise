@@ -69,7 +69,9 @@ function showMeal(data) {
                         </p>
                     </div>
                     <div class="read-more">
-                        <p class="${r.idMeal}">READ MORE...</p>
+                        <button class="button-78" role="button">
+                         <p class="${r.idMeal}">READ MORE...</p>
+                         </button>
                     </div>
                 </div>
             </div>

@@ -54,11 +54,14 @@
   align-items: center;
   border-radius: 5px;
   background: #FF8303;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .meal-card-container .meal-card {
   text-align: center;
   font-size: 2em;
   font-weight: bolder;
+  border-radius: 5px;
+  text-shadow: #f93a13 3px 3px 3px;
 }
 .meal-card-container .meal-card .meal-image {
   padding: 40px;
@@ -79,7 +82,109 @@
   margin: 50px 0;
   background: #1B1A17;
   color: #F0E3CA;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.meal-card-container .meal-card .read-more .button-78 {
+  align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
   cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+@media (min-width: 768px) {
+  .meal-card-container .meal-card .read-more .button-78 {
+    padding: 19px 32px;
+  }
+}
+.meal-card-container .meal-card .read-more .button-78:before,
+.meal-card-container .meal-card .read-more .button-78:after {
+  border-radius: 80px;
+}
+.meal-card-container .meal-card .read-more .button-78:before {
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+.meal-card-container .meal-card .read-more .button-78:after {
+  background-color: initial;
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+.meal-card-container .meal-card .read-more .button-78:hover:not(:disabled):before {
+  background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+}
+.meal-card-container .meal-card .read-more .button-78:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+.meal-card-container .meal-card .read-more .button-78:active:not(:disabled) {
+  color: #ccc;
+}
+.meal-card-container .meal-card .read-more .button-78:active:not(:disabled):before {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+}
+.meal-card-container .meal-card .read-more .button-78:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+.meal-card-container .meal-card .read-more .button-78:disabled {
+  cursor: default;
+  opacity: 0.24;
 }
 
 .food-info {
